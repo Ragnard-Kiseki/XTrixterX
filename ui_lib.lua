@@ -140,7 +140,7 @@ do -- Load items
     TabButton.Size = UDim2.new(0, 32, 1, 0)
     TabButton.Font = Enum.Font.Code
     TabButton.Text = "Menu"
-    TabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TabButton.TextColor3 = Color3.fromRGB(148, 179, 253)
     TabButton.TextSize = 16.000
 
     Folder.Name = "Folder"
@@ -1445,7 +1445,7 @@ local library library = {
             local self = { }
             tabOptions = settings.new({
                 text = "New Tab",
-		color = Color3.new(0.4, 0.4, 0.4),
+		color = Color3.fromRGB(0.4, 0.4, 0.4),
             }).handle(tabOptions)
 
             local tabbutton = new("TabButton")
