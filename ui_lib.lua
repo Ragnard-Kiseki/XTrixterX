@@ -1445,7 +1445,7 @@ local library library = {
             local self = { }
             tabOptions = settings.new({
                 text = "New Tab",
-		color = color3.new(0.4, 0.4, 0.4),
+		color = color3.fromRGB(0.4, 0.4, 0.4),
             }).handle(tabOptions)
 
             local tabbutton = new("TabButton")
