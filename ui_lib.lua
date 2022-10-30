@@ -1445,12 +1445,11 @@ local library library = {
             local self = { }
             tabOptions = settings.new({
                 text = "New Tab",
-		color = tabOptions.color,
+		color = color3.new(0.4, 0.4, 0.4),
             }).handle(tabOptions)
 
             local tabbutton = new("TabButton")
-            local tabbuttons = tabs:FindFirstChild("Items")
-            tabbutton.Parent = tabbuttons
+            tabbutton.Parent = TabButton
             tabbutton.Text = tabOptions.text
             tabbutton.Size = UDim2.new(0, tabbutton.TextBounds.X, 1, 0)
             tabbutton.TextColor3 = tabOptions.color
